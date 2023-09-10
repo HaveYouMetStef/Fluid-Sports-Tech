@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2611A22A2A3BB7F1001E89A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2611A2292A3BB7F1001E89A5 /* LaunchScreen.storyboard */; };
+		263AF2EE2A2A506900D31588 /* ResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263AF2ED2A2A506900D31588 /* ResetView.swift */; };
+		265B814A2A5A00E900ED6A61 /* FrancoisOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 265B81492A5A00E900ED6A61 /* FrancoisOne-Regular.ttf */; };
+		267DB5882A4BA2D800C1209E /* termsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DB5872A4BA2D800C1209E /* termsOfServiceView.swift */; };
+		268061E32A30EC950074C93D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268061E22A30EC950074C93D /* CalendarView.swift */; };
+		268061E52A32AFC70074C93D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268061E42A32AFC70074C93D /* ChatView.swift */; };
+		268062592A392E3A0074C93D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268062582A392E3A0074C93D /* Constants.swift */; };
+		2680625B2A392EFE0074C93D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680625A2A392EFE0074C93D /* ChatViewModel.swift */; };
+		2680625D2A392F250074C93D /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680625C2A392F250074C93D /* OpenAIService.swift */; };
+		268062602A392F470074C93D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2680625F2A392F470074C93D /* Alamofire */; };
+		268062622A3933D20074C93D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268062612A3933D20074C93D /* SettingsView.swift */; };
+		2685A2D12A4CD47200BAF931 /* privacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685A2D02A4CD47200BAF931 /* privacyPolicyView.swift */; };
+		2685A2D32A4CD93A00BAF931 /* aboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685A2D22A4CD93A00BAF931 /* aboutUsView.swift */; };
+		2685A2D52A4CDCB200BAF931 /* contactForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685A2D42A4CDCB200BAF931 /* contactForm.swift */; };
+		268FFFD12A4D44A5006AD438 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268FFFD02A4D44A5006AD438 /* FontsManager.swift */; };
+		269C60F12A6B1D780021C039 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 269C60F02A6B1D780021C039 /* Sample.pdf */; };
+		26AB5FDB2A24572700E12B89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FDA2A24572700E12B89 /* User.swift */; };
+		26AB5FDD2A245FB800E12B89 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FDC2A245FB800E12B89 /* MainPageView.swift */; };
+		26AB5FDF2A24609000E12B89 /* MentalHealthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FDE2A24609000E12B89 /* MentalHealthPage.swift */; };
+		26AB5FE12A24611B00E12B89 /* SportsPerformancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FE02A24611B00E12B89 /* SportsPerformancePage.swift */; };
+		26AB5FE32A24612800E12B89 /* CalendarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FE22A24612800E12B89 /* CalendarPage.swift */; };
+		26AB5FE52A24624600E12B89 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FE42A24624600E12B89 /* RoundedButton.swift */; };
+		26AB5FEB2A2466B300E12B89 /* toolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FEA2A2466B300E12B89 /* toolBar.swift */; };
+		26AB5FF02A246DD300E12B89 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 26AB5FEF2A246DD300E12B89 /* FirebaseAuth */; };
+		26AB5FF22A246DD300E12B89 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 26AB5FF12A246DD300E12B89 /* FirebaseFirestore */; };
+		26AB5FF42A246DD300E12B89 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 26AB5FF32A246DD300E12B89 /* FirebaseFirestoreSwift */; };
+		26AB5FF62A246DD300E12B89 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 26AB5FF52A246DD300E12B89 /* FirebaseStorage */; };
+		26AB5FFA2A246ECF00E12B89 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB5FF92A246ECF00E12B89 /* AuthViewModel.swift */; };
+		26B11EFA2A6DB17000E6E18D /* PDFViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B11EF92A6DB17000E6E18D /* PDFViewer.swift */; };
+		26B11EFC2A6DB1B900E6E18D /* Anmol-Gulati-Resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26B11EFB2A6DB1B900E6E18D /* Anmol-Gulati-Resume.pdf */; };
+		26B11EFE2A6DB1C200E6E18D /* Lecture.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26B11EFD2A6DB1C200E6E18D /* Lecture.pdf */; };
+		26B8D7AA2A25A29800F09612 /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8D7A92A25A29800F09612 /* testing.swift */; };
+		26E5106E2A24017C0018E30D /* FluidTechSportsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5106D2A24017C0018E30D /* FluidTechSportsApp.swift */; };
+		26E510702A24017C0018E30D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5106F2A24017C0018E30D /* ContentView.swift */; };
+		26E510722A24017E0018E30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E510712A24017E0018E30D /* Assets.xcassets */; };
+		26E510752A24017E0018E30D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E510742A24017E0018E30D /* Preview Assets.xcassets */; };
+		26E5108B2A2403330018E30D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5108A2A2403330018E30D /* LoginView.swift */; };
+		26E5108D2A2405B90018E30D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5108C2A2405B80018E30D /* InputView.swift */; };
+		26E510912A2425C30018E30D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E510902A2425C30018E30D /* RegistrationView.swift */; };
+		9CA168942A981FCF0069C818 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA168932A981FCF0069C818 /* GoogleService-Info.plist */; };
+		9CA168962A9D85AF0069C818 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA168952A9D85AF0069C818 /* QuestionView.swift */; };
+		9CC2C74B2A96EE7F00568D3D /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2C74A2A96EE7E00568D3D /* GoogleService-Info (1).plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2611A2292A3BB7F1001E89A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		263AF2ED2A2A506900D31588 /* ResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetView.swift; sourceTree = "<group>"; };
+		265B81492A5A00E900ED6A61 /* FrancoisOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrancoisOne-Regular.ttf"; sourceTree = "<group>"; };
+		267DB5872A4BA2D800C1209E /* termsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsOfServiceView.swift; sourceTree = "<group>"; };
+		268061E22A30EC950074C93D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		268061E42A32AFC70074C93D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		268062582A392E3A0074C93D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2680625A2A392EFE0074C93D /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		2680625C2A392F250074C93D /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		268062612A3933D20074C93D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2685A2D02A4CD47200BAF931 /* privacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyPolicyView.swift; sourceTree = "<group>"; };
+		2685A2D22A4CD93A00BAF931 /* aboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUsView.swift; sourceTree = "<group>"; };
+		2685A2D42A4CDCB200BAF931 /* contactForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactForm.swift; sourceTree = "<group>"; };
+		268FFFCF2A4D43D0006AD438 /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		268FFFD02A4D44A5006AD438 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		269C60F02A6B1D780021C039 /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = "<group>"; };
+		26AB5FDA2A24572700E12B89 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		26AB5FDC2A245FB800E12B89 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		26AB5FDE2A24609000E12B89 /* MentalHealthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthPage.swift; sourceTree = "<group>"; };
+		26AB5FE02A24611B00E12B89 /* SportsPerformancePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsPerformancePage.swift; sourceTree = "<group>"; };
+		26AB5FE22A24612800E12B89 /* CalendarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPage.swift; sourceTree = "<group>"; };
+		26AB5FE42A24624600E12B89 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		26AB5FEA2A2466B300E12B89 /* toolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toolBar.swift; sourceTree = "<group>"; };
+		26AB5FF92A246ECF00E12B89 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		26B11EF92A6DB17000E6E18D /* PDFViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewer.swift; sourceTree = "<group>"; };
+		26B11EFB2A6DB1B900E6E18D /* Anmol-Gulati-Resume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Anmol-Gulati-Resume.pdf"; sourceTree = "<group>"; };
+		26B11EFD2A6DB1C200E6E18D /* Lecture.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lecture.pdf; sourceTree = "<group>"; };
+		26B8D7A92A25A29800F09612 /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
+		26E5106A2A24017C0018E30D /* FluidTechSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluidTechSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E5106D2A24017C0018E30D /* FluidTechSportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidTechSportsApp.swift; sourceTree = "<group>"; };
+		26E5106F2A24017C0018E30D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26E510712A24017E0018E30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26E510742A24017E0018E30D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26E5108A2A2403330018E30D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		26E5108C2A2405B80018E30D /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		26E510902A2425C30018E30D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		9CA168932A981FCF0069C818 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CA168952A9D85AF0069C818 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		9CC2C74A2A96EE7E00568D3D /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26E510672A24017C0018E30D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268062602A392F470074C93D /* Alamofire in Frameworks */,
+				26AB5FF02A246DD300E12B89 /* FirebaseAuth in Frameworks */,
+				26AB5FF62A246DD300E12B89 /* FirebaseStorage in Frameworks */,
+				26AB5FF22A246DD300E12B89 /* FirebaseFirestore in Frameworks */,
+				26AB5FF42A246DD300E12B89 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2611A2282A3BB7D1001E89A5 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2611A2292A3BB7F1001E89A5 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		268062572A392D930074C93D /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				268061E42A32AFC70074C93D /* ChatView.swift */,
+				268062582A392E3A0074C93D /* Constants.swift */,
+				2680625A2A392EFE0074C93D /* ChatViewModel.swift */,
+				2680625C2A392F250074C93D /* OpenAIService.swift */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		268FFFCC2A4D4394006AD438 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				265B81492A5A00E900ED6A61 /* FrancoisOne-Regular.ttf */,
+				268FFFCF2A4D43D0006AD438 /* BebasNeue-Regular.ttf */,
+				268FFFD02A4D44A5006AD438 /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		269C60EF2A6B1D590021C039 /* PDF's */ = {
+			isa = PBXGroup;
+			children = (
+				26B11EF82A6DB10E00E6E18D /* Images */,
+				26B11EF72A6DB0FF00E6E18D /* Files */,
+				26B11EF92A6DB17000E6E18D /* PDFViewer.swift */,
+			);
+			path = "PDF's";
+			sourceTree = "<group>";
+		};
+		26AB5FF72A246E2200E12B89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26E510902A2425C30018E30D /* RegistrationView.swift */,
+				26E5108A2A2403330018E30D /* LoginView.swift */,
+				263AF2ED2A2A506900D31588 /* ResetView.swift */,
+				268061E22A30EC950074C93D /* CalendarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26AB5FF82A246E2B00E12B89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26AB5FF92A246ECF00E12B89 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		26B11EF72A6DB0FF00E6E18D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				26B11EFD2A6DB1C200E6E18D /* Lecture.pdf */,
+				269C60F02A6B1D780021C039 /* Sample.pdf */,
+				26B11EFB2A6DB1B900E6E18D /* Anmol-Gulati-Resume.pdf */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		26B11EF82A6DB10E00E6E18D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		26E510612A24017C0018E30D = {
+			isa = PBXGroup;
+			children = (
+				26E5106C2A24017C0018E30D /* FluidTechSports */,
+				26E5106B2A24017C0018E30D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26E5106B2A24017C0018E30D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26E5106A2A24017C0018E30D /* FluidTechSports.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26E5106C2A24017C0018E30D /* FluidTechSports */ = {
+			isa = PBXGroup;
+			children = (
+				269C60EF2A6B1D590021C039 /* PDF's */,
+				268FFFCC2A4D4394006AD438 /* Fonts */,
+				26E510842A24022B0018E30D /* App */,
+				26E510832A2402240018E30D /* Components */,
+				26E510822A24021E0018E30D /* Core */,
+				26E510812A2402150018E30D /* Model */,
+				26E510712A24017E0018E30D /* Assets.xcassets */,
+				9CC2C74A2A96EE7E00568D3D /* GoogleService-Info (1).plist */,
+				9CA168932A981FCF0069C818 /* GoogleService-Info.plist */,
+				26E510732A24017E0018E30D /* Preview Content */,
+			);
+			path = FluidTechSports;
+			sourceTree = "<group>";
+		};
+		26E510732A24017E0018E30D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26E510742A24017E0018E30D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26E510812A2402150018E30D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26AB5FDA2A24572700E12B89 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26E510822A24021E0018E30D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2611A2282A3BB7D1001E89A5 /* Launch */,
+				26E510862A2402660018E30D /* Authentication */,
+				26E510872A24026E0018E30D /* Profile */,
+				268062572A392D930074C93D /* OpenAI */,
+				26E510852A2402490018E30D /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26E510832A2402240018E30D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				26E5108C2A2405B80018E30D /* InputView.swift */,
+				26AB5FE42A24624600E12B89 /* RoundedButton.swift */,
+				26AB5FEA2A2466B300E12B89 /* toolBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26E510842A24022B0018E30D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26E5106F2A24017C0018E30D /* ContentView.swift */,
+				26E5106D2A24017C0018E30D /* FluidTechSportsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		26E510852A2402490018E30D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				26B8D7A92A25A29800F09612 /* testing.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		26E510862A2402660018E30D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				26AB5FF82A246E2B00E12B89 /* ViewModel */,
+				26AB5FF72A246E2200E12B89 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		26E510872A24026E0018E30D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				26AB5FDC2A245FB800E12B89 /* MainPageView.swift */,
+				26AB5FDE2A24609000E12B89 /* MentalHealthPage.swift */,
+				26AB5FE02A24611B00E12B89 /* SportsPerformancePage.swift */,
+				26AB5FE22A24612800E12B89 /* CalendarPage.swift */,
+				268062612A3933D20074C93D /* SettingsView.swift */,
+				267DB5872A4BA2D800C1209E /* termsOfServiceView.swift */,
+				2685A2D02A4CD47200BAF931 /* privacyPolicyView.swift */,
+				2685A2D22A4CD93A00BAF931 /* aboutUsView.swift */,
+				2685A2D42A4CDCB200BAF931 /* contactForm.swift */,
+				9CA168952A9D85AF0069C818 /* QuestionView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26E510692A24017C0018E30D /* FluidTechSports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E510782A24017E0018E30D /* Build configuration list for PBXNativeTarget "FluidTechSports" */;
+			buildPhases = (
+				26E510662A24017C0018E30D /* Sources */,
+				26E510672A24017C0018E30D /* Frameworks */,
+				26E510682A24017C0018E30D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluidTechSports;
+			packageProductDependencies = (
+				26AB5FEF2A246DD300E12B89 /* FirebaseAuth */,
+				26AB5FF12A246DD300E12B89 /* FirebaseFirestore */,
+				26AB5FF32A246DD300E12B89 /* FirebaseFirestoreSwift */,
+				26AB5FF52A246DD300E12B89 /* FirebaseStorage */,
+				2680625F2A392F470074C93D /* Alamofire */,
+			);
+			productName = FluidTechSports;
+			productReference = 26E5106A2A24017C0018E30D /* FluidTechSports.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26E510622A24017C0018E30D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					26E510692A24017C0018E30D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 26E510652A24017C0018E30D /* Build configuration list for PBXProject "FluidTechSports" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26E510612A24017C0018E30D;
+			packageReferences = (
+				26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2680625E2A392F470074C93D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 26E5106B2A24017C0018E30D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26E510692A24017C0018E30D /* FluidTechSports */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26E510682A24017C0018E30D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B11EFC2A6DB1B900E6E18D /* Anmol-Gulati-Resume.pdf in Resources */,
+				269C60F12A6B1D780021C039 /* Sample.pdf in Resources */,
+				9CA168942A981FCF0069C818 /* GoogleService-Info.plist in Resources */,
+				26E510752A24017E0018E30D /* Preview Assets.xcassets in Resources */,
+				2611A22A2A3BB7F1001E89A5 /* LaunchScreen.storyboard in Resources */,
+				26E510722A24017E0018E30D /* Assets.xcassets in Resources */,
+				265B814A2A5A00E900ED6A61 /* FrancoisOne-Regular.ttf in Resources */,
+				26B11EFE2A6DB1C200E6E18D /* Lecture.pdf in Resources */,
+				9CC2C74B2A96EE7F00568D3D /* GoogleService-Info (1).plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26E510662A24017C0018E30D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268062622A3933D20074C93D /* SettingsView.swift in Sources */,
+				2685A2D32A4CD93A00BAF931 /* aboutUsView.swift in Sources */,
+				26AB5FE32A24612800E12B89 /* CalendarPage.swift in Sources */,
+				26AB5FE12A24611B00E12B89 /* SportsPerformancePage.swift in Sources */,
+				268061E32A30EC950074C93D /* CalendarView.swift in Sources */,
+				26B8D7AA2A25A29800F09612 /* testing.swift in Sources */,
+				26E5108B2A2403330018E30D /* LoginView.swift in Sources */,
+				26E5108D2A2405B90018E30D /* InputView.swift in Sources */,
+				267DB5882A4BA2D800C1209E /* termsOfServiceView.swift in Sources */,
+				26AB5FDD2A245FB800E12B89 /* MainPageView.swift in Sources */,
+				2680625D2A392F250074C93D /* OpenAIService.swift in Sources */,
+				2685A2D52A4CDCB200BAF931 /* contactForm.swift in Sources */,
+				26E510702A24017C0018E30D /* ContentView.swift in Sources */,
+				26AB5FE52A24624600E12B89 /* RoundedButton.swift in Sources */,
+				26AB5FEB2A2466B300E12B89 /* toolBar.swift in Sources */,
+				268FFFD12A4D44A5006AD438 /* FontsManager.swift in Sources */,
+				26E5106E2A24017C0018E30D /* FluidTechSportsApp.swift in Sources */,
+				2680625B2A392EFE0074C93D /* ChatViewModel.swift in Sources */,
+				26AB5FDF2A24609000E12B89 /* MentalHealthPage.swift in Sources */,
+				268061E52A32AFC70074C93D /* ChatView.swift in Sources */,
+				26E510912A2425C30018E30D /* RegistrationView.swift in Sources */,
+				263AF2EE2A2A506900D31588 /* ResetView.swift in Sources */,
+				26AB5FFA2A246ECF00E12B89 /* AuthViewModel.swift in Sources */,
+				2685A2D12A4CD47200BAF931 /* privacyPolicyView.swift in Sources */,
+				9CA168962A9D85AF0069C818 /* QuestionView.swift in Sources */,
+				26AB5FDB2A24572700E12B89 /* User.swift in Sources */,
+				268062592A392E3A0074C93D /* Constants.swift in Sources */,
+				26B11EFA2A6DB17000E6E18D /* PDFViewer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26E510762A24017E0018E30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26E510772A24017E0018E30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26E510792A24017E0018E30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FluidTechSports/Preview Content\"";
+				DEVELOPMENT_TEAM = 585UA8U5S9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FST.FluidTechSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26E5107A2A24017E0018E30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FluidTechSports/Preview Content\"";
+				DEVELOPMENT_TEAM = 585UA8U5S9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FST.FluidTechSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26E510652A24017C0018E30D /* Build configuration list for PBXProject "FluidTechSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E510762A24017E0018E30D /* Debug */,
+				26E510772A24017E0018E30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E510782A24017E0018E30D /* Build configuration list for PBXNativeTarget "FluidTechSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E510792A24017E0018E30D /* Debug */,
+				26E5107A2A24017E0018E30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2680625E2A392F470074C93D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2680625F2A392F470074C93D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2680625E2A392F470074C93D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		26AB5FEF2A246DD300E12B89 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		26AB5FF12A246DD300E12B89 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		26AB5FF32A246DD300E12B89 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		26AB5FF52A246DD300E12B89 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26AB5FEE2A246DD300E12B89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 26E510622A24017C0018E30D /* Project object */;
+}
