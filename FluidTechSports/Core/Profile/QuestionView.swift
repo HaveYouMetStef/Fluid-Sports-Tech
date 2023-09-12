@@ -58,16 +58,19 @@ struct QuestionView: View {
                                     .padding(10)
                             }
                             .contentShape(Circle())
-                            .offset(x: 170, y:20)
+                            .offset(x: 170)
+                            .padding(40)
                         })
                         .buttonStyle(PlainButtonStyle())
                         .accessibilityLabel(Text("Close"))
+                        .padding(.top,10)
                         
-                        Text("What specific mental challenges or issues would you like help with? (Select all that apply)")
+                        
+                        Text("What specific mental challenges or issues would you like help with? \n (Select all that apply)")
                             .foregroundStyle(.white)
                             .font(.subheadline.weight(.heavy))
-                            .padding(50)
-                            
+                            .padding(.top,10)
+                            .frame(maxWidth: .infinity, maxHeight:.infinity)
                         
                         //challeneges sections
                         ForEach(Self.mentalChallenges, id: \.self) { challenge in
@@ -83,6 +86,7 @@ struct QuestionView: View {
                                     Text(challenge)
                                         .shadow(radius: 5)
                                         .foregroundColor(.white)
+                                        .padding(.leading, 10)
                                     
                                     Spacer()
                                     
@@ -90,6 +94,7 @@ struct QuestionView: View {
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(selectedChallenges.contains(challenge) ? .green: .white)
+                                        .padding(.trailing, 10)
                                     
                                 }
                             }
@@ -100,7 +105,6 @@ struct QuestionView: View {
                     
                 }
                 .frame(maxWidth: .infinity)
-                .background(.regularMaterial)
                 
                 //MARK - Toolbar Section
                 HStack {
@@ -110,7 +114,7 @@ struct QuestionView: View {
                                 .font(.system(size: 30))
                         }
                         .frame(maxWidth: .infinity)
-                        .padding(35)
+                        .padding(20)
                         .background(Color.white)
                     }
                     NavigationLink(destination: CalendarPage().navigationBarHidden(true)) {
