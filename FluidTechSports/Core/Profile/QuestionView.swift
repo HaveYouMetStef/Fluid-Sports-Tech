@@ -45,10 +45,29 @@ struct QuestionView: View {
                     //background color
                     Color(red: 0 / 255, green: 74 / 255, blue: 174 / 255)
                     VStack(alignment: .center, spacing: 25) {
+                        
+                        //X mark button on the top right of the view
+                        Button(action: {return}, label:  {
+                            ZStack {
+                                Circle()
+                                    .fill(Color.white)
+                                    
+                                Image(systemName: "xmark")
+                                    .font(.system(size:15, weight: .bold, design: .rounded))
+                                    .foregroundColor(.secondary)
+                                    .padding(10)
+                            }
+                            .contentShape(Circle())
+                            .offset(x: 170, y:20)
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                        .accessibilityLabel(Text("Close"))
+                        
                         Text("What specific mental challenges or issues would you like help with? (Select all that apply)")
                             .foregroundStyle(.white)
                             .font(.subheadline.weight(.heavy))
-                            .padding(20)
+                            .padding(50)
+                            
                         
                         //challeneges sections
                         ForEach(Self.mentalChallenges, id: \.self) { challenge in
@@ -71,6 +90,7 @@ struct QuestionView: View {
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(selectedChallenges.contains(challenge) ? .green: .white)
+                                    
                                 }
                             }
                             
