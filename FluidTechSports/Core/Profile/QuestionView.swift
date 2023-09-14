@@ -44,33 +44,32 @@ struct QuestionView: View {
                     
                     //background color
                     Color(red: 0 / 255, green: 74 / 255, blue: 174 / 255)
-                    VStack(alignment: .center, spacing: 25) {
+                    VStack(spacing: 25) {
                         
                         //X mark button on the top right of the view
                         Button(action: {return}, label:  {
                             ZStack {
                                 Circle()
                                     .fill(Color.white)
+                                    .frame(width: 40, height: 40)
                                     
                                 Image(systemName: "xmark")
                                     .font(.system(size:15, weight: .bold, design: .rounded))
                                     .foregroundColor(.secondary)
-                                    .padding(10)
                             }
                             .contentShape(Circle())
                             .offset(x: 170)
-                            .padding(40)
                         })
                         .buttonStyle(PlainButtonStyle())
                         .accessibilityLabel(Text("Close"))
                         .padding(.top,10)
                         
                         
-                        Text("What specific mental challenges or issues would you like help with? \n (Select all that apply)")
+                        Text("What specific mental challenges or issues would you like help with? (Select all that apply)")
                             .foregroundStyle(.white)
                             .font(.subheadline.weight(.heavy))
-                            .padding(.top,10)
-                            .frame(maxWidth: .infinity, maxHeight:.infinity)
+                            .frame(maxWidth: .infinity)
+        
                         
                         //challeneges sections
                         ForEach(Self.mentalChallenges, id: \.self) { challenge in
@@ -86,7 +85,7 @@ struct QuestionView: View {
                                     Text(challenge)
                                         .shadow(radius: 5)
                                         .foregroundColor(.white)
-                                        .padding(.leading, 10)
+                                        .padding(.leading, 20)
                                     
                                     Spacer()
                                     
@@ -94,7 +93,7 @@ struct QuestionView: View {
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(selectedChallenges.contains(challenge) ? .green: .white)
-                                        .padding(.trailing, 10)
+                                        .padding(.trailing, 20)
                                     
                                 }
                             }
