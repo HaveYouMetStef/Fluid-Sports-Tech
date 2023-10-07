@@ -46,8 +46,8 @@
 		26E5108B2A2403330018E30D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5108A2A2403330018E30D /* LoginView.swift */; };
 		26E5108D2A2405B90018E30D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5108C2A2405B80018E30D /* InputView.swift */; };
 		26E510912A2425C30018E30D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E510902A2425C30018E30D /* RegistrationView.swift */; };
+		9C3A276A2AD1DA4200AFE202 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA168952A9D85AF0069C818 /* QuestionView.swift */; };
 		9CA168942A981FCF0069C818 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA168932A981FCF0069C818 /* GoogleService-Info.plist */; };
-		9CA168962A9D85AF0069C818 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA168952A9D85AF0069C818 /* QuestionView.swift */; };
 		9CC2C74B2A96EE7F00568D3D /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2C74A2A96EE7E00568D3D /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
@@ -410,7 +410,7 @@
 				263AF2EE2A2A506900D31588 /* ResetView.swift in Sources */,
 				26AB5FFA2A246ECF00E12B89 /* AuthViewModel.swift in Sources */,
 				2685A2D12A4CD47200BAF931 /* privacyPolicyView.swift in Sources */,
-				9CA168962A9D85AF0069C818 /* QuestionView.swift in Sources */,
+				9C3A276A2AD1DA4200AFE202 /* QuestionView.swift in Sources */,
 				26AB5FDB2A24572700E12B89 /* User.swift in Sources */,
 				268062592A392E3A0074C93D /* Constants.swift in Sources */,
 				26B11EFA2A6DB17000E6E18D /* PDFViewer.swift in Sources */,

@@ -130,6 +130,7 @@ struct QuestionView: View {
             .edgesIgnoringSafeArea(.all)
         }
     }
+    
     struct QuestionView_Previews: PreviewProvider {
         static var previews: some View {
             QuestionView()
